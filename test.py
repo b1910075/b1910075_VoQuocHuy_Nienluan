@@ -27,7 +27,7 @@ model = jb.load('Bayes_model.sav')
 result = model.predict(dt)
 
 #in kết quả
-print("Ket qua chuan doan: ", result)
+print("Kết quả chẩn đoán: ", result)
 
 for i in dt.index:
     if result[i] == 1: 
