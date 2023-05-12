@@ -1,7 +1,6 @@
 import numpy as np
 import pandas as pd
 import joblib as jb
-from tkinter import *
 from tkinter.filedialog import askopenfilename
 
 data = askopenfilename()
@@ -27,8 +26,11 @@ model = jb.load('Bayes_model.sav')
 result = model.predict(dt)
 
 #in kết quả
+print("\n")
+
 print("Kết quả chẩn đoán: ", result)
 
+print("=====================================")
 for i in dt.index:
     if result[i] == 1: 
         result2 = 'Có nguy cơ'
@@ -36,6 +38,7 @@ for i in dt.index:
         result2 = 'Không có nguy cơ'
     print("Bệnh nhân thứ ", i+1," :",result2)
 
+print("\n")
 
 
 
