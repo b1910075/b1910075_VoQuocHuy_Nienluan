@@ -9,7 +9,6 @@ from sklearn.tree import DecisionTreeClassifier
 
 #Đọc dữ liệu
 dt = pd.read_csv("full_data.csv")
-print (dt)
 
 #Đổi dữ liệu kiểu chuỗi sang số để tính toán 
 dt['bmi'] = dt['bmi'].fillna(dt['bmi'].mean())
