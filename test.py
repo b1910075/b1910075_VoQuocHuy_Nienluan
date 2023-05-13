@@ -39,9 +39,3 @@ for i in dt.index:
     print("Bệnh nhân thứ ", i+1," :",result2)
 
 print("\n")
-
-
-
-
-
-
